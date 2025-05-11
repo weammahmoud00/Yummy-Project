@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    background: #000 !important;
+}
+.card{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: none !important;
+    &:hover .card-body{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card-body{
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    color: aliceblue;
+    border-radius: 5px;
+}
+/* .active{
+    background-color: #d90e0e !important;
+    color: #fff !important;
+} */
+.link {
+    text-decoration: none !important;
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+}
+a{
+    text-decoration: none !important;
+
+}
+.wrapper {
+    a{
+        text-decoration: none !important;
+        color: #000000 !important;
+        font-weight: 600;
+        display: block;
+    }
+    img{
+        width: 120%;
+        height: 8%;}
+}
+.sidebar {
+        position: fixed !important;
+        z-index: 999;
+        left: -138.6px;
+    }
+
+
+
+
+/* /////////////////////////////////////////   search.js ///////////////////////////////////////// */
+
+    .s-input::placeholder{
+        color: #c6c5c5 !important;
+        opacity: 1; 
+    }
